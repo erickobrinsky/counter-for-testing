@@ -4,10 +4,11 @@ import React from "react";
 
 const NavBar = ({ totalCounters }) => {
   return (
-    <nav className="navbar navbar-light">
+    <nav className="navbar navbar-light" role="counterGeneral">
       <div className="navbar-brand">
         <i className="fa fa-shopping-cart fa-lg m-2" aria-hidden="true" />
         <span
+          data-testid="items"
           className="badge badge-pill badge-info m-2"
           style={{ width: 50, fontSize: "24px" }}
         >

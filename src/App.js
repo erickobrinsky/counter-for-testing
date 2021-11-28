@@ -56,6 +56,7 @@ class App extends Component {
               }
             />
             <Counters
+              role="counter"
               counters={this.state.counters}
               onReset={this.handleReset}
               onIncrement={this.handleIncrement}

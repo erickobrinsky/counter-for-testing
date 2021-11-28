@@ -10,6 +10,7 @@ class Counters extends Component {
         <div className="row">
           <div className=''>
             <button
+              role="reset-button"
               className="btn btn-success m-2"
               onClick={onReset}
               disabled={counters.length === 0 ? "disabled" : ""}
@@ -17,6 +18,7 @@ class Counters extends Component {
               <i className="fa fa-refresh" aria-hidden="true" />
             </button>
             <button
+              role="restart-button"
               className="btn btn-primary m-2"
               onClick={onRestart}
               disabled={counters.length !== 0 ? "disabled" : ""}
